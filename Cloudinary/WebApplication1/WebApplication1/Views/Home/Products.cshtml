@@ -1,0 +1,13 @@
+﻿@using WebApplication1.Models.Entities;
+@model List<Product>
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1>Products</h1>
+
+@foreach(var item in Model)
+{
+    <img src="@item.Url"/>
+}
+
